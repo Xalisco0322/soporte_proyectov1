@@ -42,7 +42,7 @@
 				<td><?php echo $mostrar['alias'] ?></td>
 				<td><?php echo $mostrar['cuenta'] ?></td>
 				<td><?php echo $mostrar['linea'] ?></td>
-				<td><a class="btn btn-primary" href="eliminar.php" role="button">Eliminar</a></td> 
+				<td><a class="btn btn-primary" href="#" role="button">Eliminar</a></td> 
 			</tr>
 	<?php 
 		}
@@ -57,6 +57,6 @@
 	?>
 	<a class="btn btn-primary" href="index.html" role="button"> Regresar al menu</a>
 	<input type="image" src="" name="Submit" value="">
-    <a class="btn btn-primary" role="button" href="javascript:window.print()"> Imprimir 
+    <a class="btn btn-primary" role="button" href="javascript:window.print()"> Imprimir </a>
 </body>
 </html>
