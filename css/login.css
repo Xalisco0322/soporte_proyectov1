@@ -1,46 +1,46 @@
-/ * General * /
-cuerpo {
-  margen : 0 ;
-  relleno : 0 ;
-  font-family : 'Roboto' , sans-serif;
-  alinear texto : centro;
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-/ * Formularios de entrada * /
-input [ type = "text" ] ,  input [ type = "password" ] {
-  esquema : ninguno;
-  relleno : 20 px ;
-  pantalla : bloque;
-  ancho : 300 px ;
-  radio de borde : 3 px ;
-  borde : 1 px sólido # eee ;
-  margen : 20 px automático;
+/* Input Forms*/
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
 }
 
-input [ type = "submit" ] {
-  relleno : 10 px ;
-  color : # fff ;
-  fondo : # 0098cb ;
-  ancho : 320 px ;
-  margen : 20 px automático;
-  margen superior : 0 ;
-  borde : 0 ;
-  radio de borde : 3 px ;
-  cursor : puntero;
+input[type="submit"] {
+  padding: 10px;
+  color: #fff;
+  background: #0098cb;
+  width: 320px;
+  margin: 20px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
 }
-input [ type = "submit" ]: hover {
-  color de fondo : # 00b8eb ;
+input[type="submit"]:hover {
+  background-color: #00b8eb;
 }
 
-/ * Encabezado * /
-encabezado {
-  borde inferior : 2 px sólido # eee ;
-  relleno : 20 px  0 ;
-  margen inferior : 10 px ;
-  ancho : 100 % ;
-  alinear texto : centro;
+/* Header */
+header {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
-encabezado  a {
-  decoración de texto : ninguno;
-  color : # 333 ;
+header a {
+  text-decoration: none;
+  color: #333;
 }

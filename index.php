@@ -39,8 +39,8 @@
     <?php else: ?>
       <h1>Please Login or SignUp</h1>
 
-      <a href="login.php">Login</a> or
-      <a href="signup.php">SignUp</a>
+      <a href="login.php">Iniciar sesion</a> or
+      <a href="signup.php">Registrarse</a>
     <?php endif; ?>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
