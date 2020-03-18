@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /login');
+    header('Location: login.php');
   }
   require 'database.php';
 
@@ -17,7 +17,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /php-login");
+      header("Location: login.php");
     } else {
       $message = 'Lo sentimos, esas credenciales no coinciden';
     }
@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <?php require 'partials/header.php' ?>
+    <?php require 'partials/header.php'?>
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
     <?php endif; ?>
