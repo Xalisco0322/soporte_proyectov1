@@ -5,57 +5,48 @@
   $message = '';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO login (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $stmt->bindParam(':password', $password);
 
     if ($stmt->execute()) {
-      $message = 'Successfully created new user';
+      $message = 'Nuevo usuario creado con éxito';
     } else {
-      $message = 'Sorry there must have been an issue creating your account';
+      $message = 'Lo sentimos, debe haber habido un problema al crear su cuenta';
     }
   }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>SignUp</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <?php require 'partials/header.php' ?>
-  <?php if(!empty($message)): ?>
-  <p> <?= $message ?></p>
-  <?php endif; ?>
-<h1>SignUp</h1>
-<span>or <a href="login.php">Login</a></span>
-<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-<div class="sign-up-htm">
-  <form action="signup.php" method="POST">
-    <div class="group">
-      <label for="user" class="label">Direccion de Email</label>
-      <input id="user" type="text" class="input" name="email">
-    </div>
-    <div class="group">
-        <label for="pass" class="label">Contraseña</label>
-        <input id="pass" type="password" class="input" data-type="password" name="password">
-    </div>
-    <div class="group">
-        <label for="pass" class="label">Repetir Contraseña</label>
-        <input id="pass" type="password" class="input" data-type="password" name="confirm_password">
-    </div>
-    <div class="group">
-        <input type="submit" class="button" onclick="login"() value="Ingresar">
-    </div>
-    <div class="hr"></div>
-    <div class="foot-lnk">
-        <label for="tab-1">Already Member?</a></label>
-    </div>
-  </form>
-  </div>
-</body>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+
+    <?php require 'partials/header.php' ?>
+
+    <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
+
+    <h1>SignUp</h1>
+    <span>or <a href="login.php">Login</a></span>
+
+    <form action="signup.php" method="POST">
+      <input name="email" type="text" placeholder="Introduce tu correo electronico">
+      <input name="password" type="password" placeholder="Ingresa tu contraseña">
+      <input name="confirm_password" type="password" placeholder="Confirma tu contraseña">
+      <input type="submit" value="Enviar">
+    </form>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+  </body>
 </html>
