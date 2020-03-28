@@ -59,7 +59,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
     </script> 
     
-    <a class="btn btn-primary" href="cambiosim.html" role="button"> Regresar </a>
+    <a class="btn btn-primary" href="cambios/cambiosim.html" role="button"> Regresar </a>
     <input type="image" src="" name="Submit" value="">
     <a class="btn btn-primary" role="button" href="javascript:window.print()"> Imprimir
     </a> 
