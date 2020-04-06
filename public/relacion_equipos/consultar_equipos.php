@@ -64,7 +64,7 @@
     <?php
 		echo '<script type="text/javascript">alert("Consulta solicitada");</script>';
 	?>
-	<a class="btn btn-primary" href="instalacion.html" role="button"> Regresar </a> 
+	<a class="btn btn-primary" href="../instalacion.html" role="button"> Regresar </a> 
 
 </body>
 </html>

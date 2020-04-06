@@ -55,7 +55,7 @@
     <?php
 		echo '<script type="text/javascript">alert("Consulta solicitada");</script>';
 	?>
-	<a class="btn btn-primary" href="index.html" role="button"> Regresar al menu</a>
+	<a class="btn btn-primary" href="../../index.html" role="button"> Regresar al menu</a>
 	<input type="image" src="" name="Submit" value="">
     <a class="btn btn-primary" role="button" href="javascript:window.print()"> Imprimir </a>
 </body>
