@@ -9,7 +9,7 @@
 <body>
     <?php
 
-    $conexion=mysqli_connect('localhost','root','','grupoit') or die ('Error en la base de datos');                       
+    $conexion=mysqli_connect('localhost:3306','id12847322_soporte','soporte02','id12847322_grupoit') or die ('Error en la base de datos');                       
 
     $sql="INSERT INTO registro VALUES(null,
                                     '".$_POST["empresa"]."',
