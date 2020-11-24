@@ -1,0 +1,32 @@
+.dropdown {
+    .dropdown-menu {
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-Origin: top center;
+        transform: scale(1,0);
+        display: block;
+    }
+    &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+        }
+    }
+}
+
+footer {
+    background-color:#1A1A1A;
+    height: 50%;
+  color: white;
+  padding: 15px;
+}
+
+.main1 { 
+  display:flex;
+
+  
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}

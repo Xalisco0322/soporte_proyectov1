@@ -1,97 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Menu-Servicios</title>
-  <!-- Start of Async Callbell Code -->
-  <script>
-  window.callbellSettings = {
-    token: "Je8TEhEs2usmKKCaKtBzCvSr"
-    };
-  </script>
-  <script>
-  (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    <head>
+    <title>Grupo IT Solutions</title>
+    <!-- Start of Async Callbell Code -->
+    <script>window.callbellSettings = {token: "Je8TEhEs2usmKKCaKtBzCvSr"};</script>
+    <script>
+        (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
     <!-- End of Async Callbell Code -->
- 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-</head>
-<body>
-	<div class="sidebar-container">
-  <div class="sidebar-logo">
-    Grupo IT Solutions
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FontAwesom CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+    <!-- Bootstrap CSS -->    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">            
+    <!--CSS custom -->  
+    <link rel="stylesheet" href="css/stylo.css">  
+    </head>
+    <body>
+    <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/logo1.jpg" width="100" height="50" alt=""> Grupo IT Solutions</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+  <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="presentacion/presentacionIT/presentacion2020.html">Presentaciones</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soporte Tecnico</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="sistema/alta.php">Registro de Altas</a>
+          <a class="dropdown-item" href="sistema/baja.php">Registro de Bajas</a>
+          <a class="dropdown-item" href="sistema/sim.php">Cambios de sim</a>
+          <a class="dropdown-item" href="sistema/relacionequipos.php">Relacion de Equipos</a>
+          <a class="dropdown-item" href="sistema/relacionsim.php">Relacion de sim</a>
+          <a class="dropdown-item" href="sistema/comodato.php">Comodatos</a>
+        </div>
+      </li>
+    </ul>
   </div>
-  <ul class="sidebar-navigation">
-    <li class="header">Soporte Tecnico</li>
-    <li>
-      <a href="public/bajas.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Bajas de plataforma
-      </a>
-    </li>
-     <li>
-      <a href="public/instalacion.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Instalaciones
-      </a>
-    </li>
-     <li>
-      <a href="public/desinstalacion.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Desinstalaciones
-      </a>
-    </li>
-    <li>
-      <a href="public/reinstalacion.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Reinstalaciones
-      </a>
-    </li>
-     <li>
-      <a href="public/cambio_sim.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Cambios de Sim
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Relacion de Equipos
-      </a>
-    </li>
-     <li>
-      <a href="public/relacion_sim.html">
-        <i class="fa fa-tachometer" aria-hidden="true"></i> Relacion de Sim
-      </a>
-    </li>
-    <li class="header">Otros Servicios
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-users" aria-hidden="true"></i>  Comodatos
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-cog" aria-hidden="true"></i> Presentaciones
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-info-circle" aria-hidden="true"></i> 
-      </a>
-    </li>
-  </ul>
+</nav>
 </div>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>         
+    <!--Vue.JS -->    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>             
+    <!--Código custom -->          
+    <script src="#"></script> 
 <div class="content-container">
   <div class="container-fluid">
     <div class="jumbotron">
-      <h1>Posibilidades Infinitas</h1>
-      <img src="img/logo2.jpg">
+      <h1>¿QUIENES SOMOS?</h1>
+      <div class="col-md-4 text-justify">
+     <p>
+         Somos una empresa mexicana dedicada al rastreo satelital y desarrollo de aplicaciones con las mejores innovaciones del sureste del país;
+      teniendo integraciones con sistemas administrativos como SAP y certificada como proveedor autorizado de PEMEX (Petróleos Mexicanos).
+      Comprometidos al desarrollo económico empresarial de nuestra entiedad, ofrecemos soluciones que optimizan los procesos administrativos y
+      operativos. Trabajamos con equipos inteligentes que se adapten a las necesidades y requerimientos de su empresa o institución.
+      Nos encontramos en constante capacitación y crecimiento para poder brindarles las mejores innovaciones en tecnologías.
+    </p>
+      </div>
+      <div class="text text-right">
+        <img src="img/nosotros.png"></div>
       <p>
-        <blockquote class="blockquote-reverse">
+        <br>
+        <a class="btn btn-lg btn-primary" href="https://diesel.grupoitsur.com/v2/#!/user/login?final=1" role="button">Tracker Gateway&raquo;</a>
+        <div class="text text-right">
+         <blockquote class="blockquote-reverse">
           <footer>Ing.Alberto Gonzalez<cite title="Fuente"> GrupoIT</cite></footer>
         </blockquote>
-        <a class="btn btn-lg btn-primary" href="https://diesel.grupoitsur.com/v2/#!/user/login?final=1" 
-        role="button">Tracker Gateway&raquo;</a>
+        </div>
       </p>
     </div>
   </div>
+</div>      
+<footer>
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <h6 class="text-muted lead">CONTACTO:</h6>
+            <h6 class="text-muted">
+            Av. Aristofanes #356 Col. Atenas 2<br>
+            Tuxtla Gutierrez, Chiapas.<br>
+            Teléfonos: 9615791691<br>
+            soporte@grupoitsur.com<br>
+            </h6>
+        </div>
+        <div class="col-xs-12 col-md-6">
+        <div class="pull-right">
+        <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+              <div class="redes-footer">
+                  <a href="https://es-la.facebook.com/GrupoItSolutions"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="##"><i class="fab fa-whatsapp"></i></a>
+                <a href="##"><i class="fab fa-telegram"></i></a>
+                    <i class="fas fa-envelope-square"></i>
+              </div>
+        </div>
+        <div class="row"> <p class="text-muted small text-right">Grupo IT, Posibilidades Infinitas<br> Todos los derechos reservados.</p>
+        </div>
+    </div>
+  </div>  
 </div>
-</body>
+</footer>  
+    </body>
 </html>
+
